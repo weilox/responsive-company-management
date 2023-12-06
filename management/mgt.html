@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mgt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Manage Company</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1 id="companyname"></h1>
+        <a href="../index.html">Quit</a>
+    </div>
+
+    <div class="header">
+        <div class="headerimage"></div>
+        <div class="headercontent">
+            <h1>Management</h1>
+            <p>You can manage your company and you can be rich.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="containerbox">
+
+            <div class="statusbox">
+                <div class="title"></div>
+                <div class="properties">
+                    <div class="firstbox">
+                        <h1><strong>Sector</strong></h1>
+                        <h1><strong>Salary</strong></h1>
+                        <h1><strong>Staff</strong></h1>
+                        <h1><strong>Sales</strong></h1>
+                        <h1><strong>Performance</strong></h1>
+                    </div>
+                    <div class="secondbox">
+                        <h1 id="sector"></h1>
+                        <h1 id="salary"></h1>
+                        <h1 id="staff"></h1>
+                        <h1 id="sales"></h1>
+                        <h1 id="performance"></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actionbox">
+                <div class="action box1" onclick="box1()"></div>
+                <div class="action box2" onclick="box2()"></div>
+                <div class="action box3" onclick="box3()"></div>
+                <div class="action box4" onclick="box4()"></div>
+            </div>
+
+            <div class="employeebox">
+                <div class="create">
+                    <h1>Employees</h1>
+                    <a id="add">Create Employee</a>
+                </div>
+                <hr class="border">
+                <div id="employees" class="employees"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>Wei<strong>lox</strong></h1>
+    </div>
+
+
+    <script src="mgt.js"></script>
+</body>
+</html>
