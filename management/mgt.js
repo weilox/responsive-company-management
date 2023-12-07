@@ -18,16 +18,16 @@ function performance() {
     if (salary <= 2500) {
         document.getElementById("performance").innerHTML = "Went bankrupt";
     }
-    else if (salary < 5000) {
+    if (salary < 5000) {
         document.getElementById("performance").innerHTML = "Starter";
     }
-    else if (salary < 10000) {
+    if (salary < 10000) {
         document.getElementById("performance").innerHTML = "Good";
     }
-    else if (salary < 30000) {
+    if (salary < 30000) {
         document.getElementById("performance").innerHTML = "Very Good";
     }
-    else if (salary >= 30000) {
+    if (salary >= 30000) {
         document.getElementById("performance").innerHTML = "Perfect";
     }
 }
