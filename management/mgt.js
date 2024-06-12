@@ -15,8 +15,12 @@ let sales = 0;
 document.getElementById("companyname").innerHTML = getcompanyname + " Company";
 document.getElementById("sector").innerHTML = getcompanyfield;
 function performance() {
-    if (salary <= 2500) {
-        document.getElementById("performance").innerHTML = "Went bankrupt";
+    if(salary < 2500) {
+        document.getElementById("performance").innerHTML = "Company Went Bankrupt";
+        return;
+    }
+    if (salary == 2500) {
+        document.getElementById("performance").innerHTML = "Normal";
         return;
     }
     if (salary < 5000) {
