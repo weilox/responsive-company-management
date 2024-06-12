@@ -17,18 +17,23 @@ document.getElementById("sector").innerHTML = getcompanyfield;
 function performance() {
     if (salary <= 2500) {
         document.getElementById("performance").innerHTML = "Went bankrupt";
+        return;
     }
     if (salary < 5000) {
         document.getElementById("performance").innerHTML = "Starter";
+        return;
     }
     if (salary < 10000) {
         document.getElementById("performance").innerHTML = "Good";
+        return;
     }
     if (salary < 30000) {
         document.getElementById("performance").innerHTML = "Very Good";
+        return;
     }
     if (salary >= 30000) {
         document.getElementById("performance").innerHTML = "Perfect";
+        return;
     }
 }
 
@@ -78,12 +83,14 @@ button.onclick = function(){
                 employees.removeChild(box);
                 salary += 10000;
                 employee-=1;
+                performance()
             }
         }
         else {
             alert ("Your money is not enough 10000$");
         }
     }
+    performance()
 }
 
 function box1() {
@@ -156,6 +163,7 @@ function box1() {
             alert("You need to add employee!")
         }
     }
+    performance()
 }
 
 function box2() {
@@ -181,6 +189,7 @@ function box2() {
     else {
         alert("You need to add employee!")
     }
+    performance()
 }
 
 function box3() {
@@ -206,6 +215,7 @@ function box3() {
     else {
         alert("You need to add employee!")
     }
+    performance()
 }
 
 function box4() {
@@ -231,4 +241,5 @@ function box4() {
     else {
         alert("You need to add employee!")
     }
+    performance()
 }
